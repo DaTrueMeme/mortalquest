@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'enter-the-gungeon-small';
+    src: url('../assets/font/enter-the-gungeon-small.ttf');
+}
+
+
+@font-face {
+    font-family: 'Cocogoose-Pro-Bold-trial';
+    src: url('../assets/font/Cocogoose-Pro-Bold-trial.ttf');
+}
+
+
+@font-face {
+    font-family: "Mont-HeavyDEMO";
+    src: url('../assets/font/Mont-HeavyDEMO.otf');
+}
+
+
+body {
+    margin: 0px;
+    background-color: #2b2b2b;
+}
+
+
+.navbar {
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, #2b2b2b 100%), 
+        url(../assets/images/background.png);
+    padding-bottom: 20%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0);
+    width: 100%;
+    box-sizing: border-box;
+
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.navbar ul:hover {
+    background-color: rgba(255, 0, 0, 1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    font-family: 'Mont-HeavyDEMO';
+    font-size: 18px;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+}
+
+a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    width: 700px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.75));
+}
+
+
+.desc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    margin-top: 12%;
+}
+
+.desc {
+    position: relative;
+    text-align: center;
+
+    width: 50%;
+}
+
+.desc div {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: -29%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.desc .tuto {
+    width: 200px;
+    height: 200px;
+    background-image: url(../assets/images/tuto/tuto.png);
+    background-size: cover;
+    
+    transition: transform 0.2s ease;    
+}
+
+.desc .tuto:hover {
+    background-image: url(../assets/images/tuto/tuto_talk.png);
+    transform: rotate(10deg) scale(1.5) translate(-50px, -65px);
+}
+
+.desc .john {
+    width: 200px;
+    height: 200px;
+    background-image: url(../assets/images/john/john.png);
+    background-size: cover;
+
+    transition: transform 0.2s ease;    
+}
+
+.desc .john:hover {
+    background-image: url(../assets/images/john/john_blink.png);
+    transform: rotate(10deg) scale(1.5) translate(-50px, -65px);
+}
+
+.description {
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'enter-the-gungeon-small';
+    font-size: 35px;
+    background-color: #505050;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.mq {
+    color: #ff0000;
+}
+
+
+.footer {
+    background-color: #2b2b2b;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    font-family: 'Mont-HeavyDEMO';
+    font-size: 15px;
+
+    transition: background-color 0.2s ease;
+}
+
+.footer:hover {
+    background-color: #272727;
+}
