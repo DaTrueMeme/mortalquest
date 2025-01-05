@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Mont-HeavyDEMO";
+    src: url('assets/font/Mont-HeavyDEMO.otf');
+}
+
+body {
+    background-color: #2b2b2b;
+}
+
+p {
+    color: white;
+    text-align: center;
+    line-height: 10px;
+    font-size: 50px;
+    font-family: "Mont-HeavyDEMO";
+}
+
+a {
+    color: #4fc3f7;
+    text-decoration: none;
+}
